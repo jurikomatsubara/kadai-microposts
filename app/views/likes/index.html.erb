@@ -1,0 +1,8 @@
+<h1>micropost一覧</h1>
+
+<ul>
+  <% @microposts.each do |micropost| %>
+    <li><%= link_to micropost.id, micropost %> : <%= micropost.content %></li>
+    
+  <% end %>
+</ul>

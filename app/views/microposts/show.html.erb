@@ -1,0 +1,6 @@
+<h1>id: <%= @micropost.id %> のmicropostの詳細ページ</h1>
+
+<p><%= @micropost.content %></p>
+<%= link_to '一覧に戻る', microposts_path %>
+<%= link_to 'このmicropostを編集する', edit_micropost_path(@micropost) %>
+<%= link_to 'このmicropostを削除する', @micropost, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>

@@ -1,0 +1,10 @@
+<h1>micropost一覧</h1>
+
+<ul>
+  <% @microposts.each do |micropost| %>
+    <li><%= link_to micropost.id, micropost %> : <%= micropost.content %></li>
+    
+  <% end %>
+</ul>
+
+<%= link_to '新規micropostの投稿', new_micropost_path %>
